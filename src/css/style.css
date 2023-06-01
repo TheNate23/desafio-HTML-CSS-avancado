@@ -1,0 +1,103 @@
+body{
+    background: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 80px;
+    padding-left: 67px;
+}
+
+.logo{
+    color: #fff;
+    width: 220px;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 70px;
+}
+
+.img{
+    width: 700px;
+}
+
+.content{
+    padding:50px 0px 90px 60px;
+}
+
+.content h1{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 64px;    
+    font-family: 'Poppins';
+}
+
+.content p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    font-family: 'Open sans';
+}
+
+.content .button{
+    border-radius: 50px;
+    box-shadow: 5px 5px 30px rgba(1, 1, 1, 0.3);
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none; 
+    padding: 15px 60px;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    font-family: 'Poppins';
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    margin-top: 2rem;
+    transition: 0.3s;
+}
+
+.content .button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.footer{
+    padding: 30px 80px;
+}
+
+.social{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social .social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    transition: 0.3s;
+}
+
+.social .social-icon:hover{
+    background-color: #fff;
+    color: hsl(300, 69%, 71%);
+    
+}
