@@ -1,59 +1,78 @@
-@media(max-width:376px){
+@media(max-width:1080px){
     body{
-        background: url(../images/bg-mobile.svg);
+        overflow: hidden;
+        height: 75vh;
     }
-
-    .header{
-        padding: 30px 35px;
-    }
-
-    .logo{
-        width: 130px;
-    }
-
-    .main{
-        padding: 30px 35px;
-        flex-direction: column;
-    }
-
-    .img{
-        min-width: 0;
-        margin-bottom: 60px;
-    }
-
-    .content{
-        display: flex;
-        flex-direction: column;
+    
+    .container{
+        align-items: center;
         justify-content: center;
-        padding: 0;
+    }
+}
+
+@media(max-width:1024px){
+    .mockup{
+        display: flex;
+        align-items: center;
     }
 
-    .content h1{
-        font-size: 23px;
+    .mockup img{
+        width: 350px;
+    }
+
+    .container{
+        height: 75vh;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width:768px){
+    body{
+        background: url(../images/bg-mobile.svg) center center no-repeat;
+        background-color: hsl(257, 40%, 49%);
+        background-size: cover;
+    }
+
+    .container-mockup{
+        display: block;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img{
+        margin-bottom: 30px;
+    }
+
+    .container-mockup{
+        max-height: 720px;
+    }
+
+    .mockup img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .mockup-info{
+        position: relative;
+        flex-direction: column;
         text-align: center;
+        align-items: center;
+        margin: 15px auto;
     }
 
-    .content p{
-        font-size: 16px;
-        text-align: center;
-        margin: 15px 0;
+    .mockup-info .social{
+        position: relative;
+        left: 0;
+        bottom: 0;
+        top: 30px;
     }
 
-    .content .button{
-        width: 180px;
-        font-size: 12px;
-        padding: 10px;
-        align-self: center;
-    }
-
-    .social .social-icon{
-        font-size: 12px;
-        width: 25px;
-        height: 25px;
-        margin-left: 10px;
-    }
-
-    .social .social-icon:first-child{
-        margin-left: 0;
+    .mockup-info button{
+        padding: 15px 60px;
     }
 }

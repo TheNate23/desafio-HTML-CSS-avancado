@@ -1,103 +1,89 @@
-body{
-    background: url(../images/bg-desktop.svg);
+html {
+    height: 100hv;
+}
+
+body {
+    background: url(../images/bg-desktop.svg) center center no-repeat;
     background-color: hsl(257, 40%, 49%);
-    background-repeat: no-repeat;
+    margin: 25px 35px;
+    background-size: cover;
+    font-family: 'Open Sans';
 }
 
-.header{
+.header a img {
+    width: 150px;
+}
+
+.container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 45px;
-    padding-bottom: 80px;
-    padding-left: 67px;
+    margin: 50px 0;
+    height: 100%;
+    max-width: 2560px;
 }
 
-.logo{
-    color: #fff;
-    width: 220px;
-}
-
-.main{
+.container-mockup {
     display: flex;
-    justify-content: space-between; 
-    padding: 0 70px;
+    justify-content: center;
 }
 
-.img{
-    width: 700px;
+.mockup img {
+    max-width: 600px;
+    margin-right: 70px;
 }
 
-.content{
-    padding:50px 0px 90px 60px;
+.mockup-info {
+    max-width: 500px;
+    margin-top: 20px;
+    position: relative;
 }
 
-.content h1{
-    color: #fff;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 64px;    
+.mockup-info h1,
+.info button {
     font-family: 'Poppins';
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
-.content p {
-    color: #fff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 25px;
-    font-family: 'Open sans';
-}
-
-.content .button{
-    border-radius: 50px;
-    box-shadow: 5px 5px 30px rgba(1, 1, 1, 0.3);
-    background-color: #fff;
-    text-align: center;
-    text-decoration: none; 
-    padding: 15px 60px;
+.mockup-info button {
     color: hsl(257, 40%, 49%);
-    font-size: 18px;
-    font-family: 'Poppins';
-    cursor: pointer;
-    width: 200px;
-    height: 60px;
-    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 15px 50px;
+    margin-top: 25px;
+    box-shadow: 1 px 1px 5px #000000;
     transition: 0.3s;
+    font-size: 18px;
 }
 
-.content .button:hover{
+.mockup-info button:hover{
     background-color: hsl(300, 69%, 71%);
-    color: #fff;
+    color: #ffffff;
+    cursor: pointer;
 }
 
-.footer{
-    padding: 30px 80px;
-}
-
-.social{
+.mockup-info .social{
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
+    position: absolute;
+    left: 70%;
+    bottom:20px;
+    flex-direction: row;
 }
 
-.social .social-icon{
+.mockup-info .social a{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    font-size: 18px;
-    color: #fff;
-    border: 1.5px solid #fff;
+    border: 1px solid #ffffff;
+    font-size: 25px;
     border-radius: 50%;
-    width: 4rem;
-    height: 4rem;
-    transition: 0.3s;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    transition: 0.6 ease-in-out;
 }
 
-.social .social-icon:hover{
-    background-color: #fff;
+.mockup-info .social a:hover{
     color: hsl(300, 69%, 71%);
-    
+    border: 1px solid hsl(300, 69%, 71%);
 }

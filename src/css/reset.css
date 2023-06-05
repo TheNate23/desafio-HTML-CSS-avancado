@@ -1,13 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    border: none;
 
 }
 
-a{
+a, p, h1{
     text-decoration: none;
-}
-
-html{
-    font-size: 62.5%;
+    color: #ffffff;
 }
